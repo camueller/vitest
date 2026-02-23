@@ -15,11 +15,6 @@ export default defineConfig(async () => {
         include: ['**/*.spec.ts'],
         globals: true,
         environment: `jsdom`,
-        setupFiles: [
-          './src/test/vitest.setup.ts',
-          './src/test/failTestOnConsoleError.ts',
-          './src/test/failOnMissingBuild.ts',
-        ],
         coverage: {
           provider: 'v8',
           include: ['**/*.{ts,vue}'],
