@@ -12,7 +12,7 @@ export default defineConfig(async () => {
         pool: 'vmThreads',
         reporters: ['default', ['html', { outputFile: resolve(process.cwd(), 'build/unit-test-report/index.html') }]],
         name: 'unit-tests',
-        include: ['**/*.spec.ts'],
+        include: ['**/*.test.ts'],
         globals: true,
         environment: `jsdom`,
         coverage: {
